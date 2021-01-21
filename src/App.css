@@ -1,6 +1,66 @@
+/* |||||||||||||||||||||||||||||||||||||||||| */
+/* ||||||||||||| Full Monty ||||||||||||||||| */
+/* |||||||||||||||||||||||||||||||||||||||||| */
+html {
+  height: 100%
+}
+body {
+  border: 5px solid blue;
+  height: 100%;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||| */
+/* |||||||||||||| Header |||||||||||||||||||| */
+/* |||||||||||||||||||||||||||||||||||||||||| */
+
+header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "a b c";
+  border: 3px solid yellowgreen;
+}
+
+.header-links {
+  grid-area: c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||| */
+/* ||||||||||||||| Main  |||||||||||||||||||| */
+/* |||||||||||||||||||||||||||||||||||||||||| */
+
+main {
+  border: 3px solid hotpink;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.portfolio-elements {
+  display: flex;
+}
 .square {
-  height: 350px;
-  width: 350px;
+  height: 100px;
+  width: 100px;
   background-color: orange;
   border: 2px solid black;
+}
+
+aside {
+  height: 100%;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||| */
+/* ||||||||||||||| Footer ||||||||||||||||||| */
+/* |||||||||||||||||||||||||||||||||||||||||| */
+
+footer {
+  width: 100%;
+  border: 8px solid purple;
+  position: fixed;
+  bottom: 0;
 }
